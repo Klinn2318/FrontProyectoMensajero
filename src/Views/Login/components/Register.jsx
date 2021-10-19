@@ -5,7 +5,6 @@ const Register = () => {
     const baseURL = "http://localhost:8080/usuario/crear"
 
     async function submitFormRegister(usuario, password) { // <== Enviar datos a Backend
-        alert("Enviando Datos a Backend para verificar registro");
         let data = {
             usuario: usuario,
             password: password
@@ -16,9 +15,8 @@ const Register = () => {
                 window.location.href = "/home"
             })
             .catch(error => {
-                alert("Se dio un error intentelo de nuevo")
+                alert(`El usuario ${data.usuario} ya esta registrado, pruebe con otro`)
             });
-
     }
 
     let usuario;
