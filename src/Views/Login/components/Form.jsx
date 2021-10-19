@@ -30,12 +30,14 @@ const Form = () => {
 			password: password,
 			rol: rol
 		}
-		
+
 		console.log(data)
 		axios.post(baseURL, data)
 		.then((response)=>{
 			console.log(response)
 		})
+
+		window.location.href = "/home"
 	}
 
 	return (
