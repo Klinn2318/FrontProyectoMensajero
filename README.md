@@ -3,8 +3,8 @@ Aqui esta el frontend del proyecto final de programacion web, tiene dos ramas, l
 ## Integrantes del Grupo
 * Gabriel Fernando Reyes Guevara - 2200141
 * Luis Felipe Cruz Ceballos - 2110065
+* Jorge Saul Castillo Jaimes - 2111127
 
-##### Nota
-Cabe aclarar que no se pudo fusionar el backend con el frontend por distintos inconvenientes, aqui unicamente se encuentra el Front sin ninguna verificacion con el servidor porlo que al ponerle cualquier usuario y cualquier contrasena lo llevaria a lo que es el sitio web, que en este caso se vinculo con el taller anterior para poder ver como funcionaria si estuviese enlazado.
+##### Videos de Explicacion
 * Se anexa aqui el link para ver un video del funcionamiento del frontend: https://youtu.be/H5Zu2_3ifRQ
-* Se anexa aqui el link para ver un video del funcionamiento del backend: 
+* Se anexa aqui el link para ver un video del funcionamiento del backend: https://youtu.be/VAZhG5rPfvc
