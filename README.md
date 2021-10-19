@@ -1,5 +1,5 @@
 # FrontProyectoMensajero
-Aqui esta el frontend del proyecto final de programacion web, tiene dos ramas, la primera es la defaul (main) que creo github que solo contiene este readme, y la segunda (master) es la que contiene el proyecto en frontend del logging.
+Aqui esta el frontend del proyecto final de programacion web, tiene dos ramas, la primera es la defaul (main) que creo github que solo contiene este readme, y la segunda (master) es la que contiene los archivos del proyecto.
 ## Integrantes del Grupo
 * Gabriel Fernando Reyes Guevara - 2200141
 * Luis Felipe Cruz Ceballos - 2110065
