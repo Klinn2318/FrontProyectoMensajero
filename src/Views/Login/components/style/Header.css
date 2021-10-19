@@ -1,0 +1,14 @@
+header h1{
+	color: var(--fg-acent-color);
+	margin-bottom: 10px;
+	transition: color .3s ease-in-out
+}
+
+header h4{
+	font-weight: 200;
+	margin-bottom: 20px;
+}
+
+header strong{
+	font-weight: 600;
+}

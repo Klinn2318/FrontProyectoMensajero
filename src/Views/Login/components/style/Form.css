@@ -1,0 +1,59 @@
+.login-form{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+}
+
+.login-form label{
+	font-size: 0.9em;
+}
+
+.login-form__input{
+	width: 100%;
+	border-radius: 20px;
+	padding: 10px;
+	margin: 10px;
+	border: none;
+	font-family: "Nunito Sans";
+	text-align: center;
+	border: solid 2px var(--bg-color);
+	transition: border .3s ease-in-out;
+}
+
+.login-form__submit--container{
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.login-form__submit--container a{
+	width: 100%;
+	margin: 20px 10px;
+}
+
+.login-form__submit--container a button{
+	width: 100%;
+	margin: 0;
+}
+
+.login-form__submit{
+	background-color: var(--bg-acent-color);
+	border: none;
+	border-radius: 20px;
+	color: #fff;
+	height: 30px;
+	margin: 20px 10px;
+	width: 100%;
+	cursor: pointer;
+	transition: background-color .1s;
+}
+
+.login-form__submit:focus-visible{
+	outline: solid 2px var(--fg-color);
+}
+
+.login-form__submit:hover{
+	background-color: #315ace;
+}

@@ -1,0 +1,110 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600&display=swap');
+
+.light{
+  --bg-color: #ddd;
+  --card-bg: #eeeeee;
+  --fg-color: #2D2D34;
+  --bg-acent-color: #3461dd;
+  --fg-acent-color: #3461dd;
+}
+
+.dark{
+  --bg-color: #2D2D34;
+  --card-bg: #26262b;
+  --fg-color: #eeeeee;
+  --bg-acent-color: #3461dd;
+  --fg-acent-color: #5c85f7;
+}
+
+/* Styles */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito Sans';
+}
+
+a{
+  color: currentColor;
+  text-decoration: none;
+}
+
+#root{
+  font-size: 16px;
+}
+
+#root #root-container.dark{
+  background-color: var(--bg-color);
+  color: var(--fg-color);
+}
+
+#root #root-container.light{
+  background-color: var(--bg-color);
+  color: var(--fg-color);
+}
+
+#root, #root-container{
+  height: 100vh;
+  width: 100vw;
+}
+
+#root-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transition: background-color .3s ease-in-out, color .3s ease-in-out;
+}
+
+#login-card{
+  background-color: var(--card-bg);
+  text-align: center;
+  padding: 40px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 10px;
+  transition: background-color .3s ease-in-out;
+}
+
+#root-container.light #login-card{
+  background-color: var(--card-bg);
+}
+
+#root-container.dark #login-card{
+  background-color: var(--card-bg);
+}
+
+body{
+  display: flex;
+  justify-content: center;
+}
+
+.rootBtn{
+  position: absolute;
+  font-size: .9em;
+  top: 15px;
+  cursor: pointer;
+  background-color: var(--card-bg);
+  color: var(--fg-color);
+  padding: 10px;
+  border-radius: 10px;
+  user-select: none;
+  transition: background-color .3s ease-in-out, color .3s ease-in-out;
+  font-weight: 400;
+}
+
+.rootBtn:hover{
+  color: #4274ff;
+}
+
+.themeBtn{
+  right: 15px;
+}
+
+.backBtn{
+  left: 15px;
+}

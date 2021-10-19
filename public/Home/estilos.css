@@ -1,0 +1,403 @@
+/*Fuentes*/
+@font-face {
+    font-family: 'Google Sans';
+    src: url('fuentes/GoogleSans-MediumItalic.eot');
+    src: local('Google Sans Medium Italic'), local('GoogleSans-MediumItalic'),
+        url('fuentes/GoogleSans-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('fuentes/GoogleSans-MediumItalic.woff2') format('woff2'),
+        url('fuentes/GoogleSans-MediumItalic.woff') format('woff'),
+        url('fuentes/GoogleSans-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Google Sans';
+    src: url('fuentes/GoogleSans-Bold.eot');
+    src: local('Google Sans Bold'), local('GoogleSans-Bold'),
+        url('fuentes/GoogleSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fuentes/GoogleSans-Bold.woff2') format('woff2'),
+        url('fuentes/GoogleSans-Bold.woff') format('woff'),
+        url('fuentes/GoogleSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Google Sans';
+    src: url('fuentes/GoogleSans-Italic.eot');
+    src: local('Google Sans Italic'), local('GoogleSans-Italic'),
+        url('fuentes/GoogleSans-Italic.eot?#iefix') format('embedded-opentype'),
+        url('fuentes/GoogleSans-Italic.woff2') format('woff2'),
+        url('fuentes/GoogleSans-Italic.woff') format('woff'),
+        url('fuentes/GoogleSans-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Google Sans';
+    src: url('fuentes/GoogleSans-Medium.eot');
+    src: local('Google Sans Medium'), local('GoogleSans-Medium'),
+        url('fuentes/GoogleSans-Medium.eot?#iefix') format('embedded-opentype'),
+        url('fuentes/GoogleSans-Medium.woff2') format('woff2'),
+        url('fuentes/GoogleSans-Medium.woff') format('woff'),
+        url('fuentes/GoogleSans-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Google Sans';
+    src: url('fuentes/GoogleSans-Regular.eot');
+    src: local('Google Sans Regular'), local('GoogleSans-Regular'),
+        url('fuentes/GoogleSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fuentes/GoogleSans-Regular.woff2') format('woff2'),
+        url('fuentes/GoogleSans-Regular.woff') format('woff'),
+        url('fuentes/GoogleSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Google Sans';
+    src: url('fuentes/GoogleSans-BoldItalic.eot');
+    src: local('Google Sans Bold Italic'), local('GoogleSans-BoldItalic'),
+        url('fuentes/GoogleSans-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('fuentes/GoogleSans-BoldItalic.woff2') format('woff2'),
+        url('fuentes/GoogleSans-BoldItalic.woff') format('woff'),
+        url('fuentes/GoogleSans-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+/*Estilos*/
+*{
+    font-family: 'Google Sans';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+ul{
+    list-style: none;
+}
+
+nav{
+    color: #fff;
+	display: flex;
+	align-items: center;
+    justify-content: space-between;
+    padding: 5px 20px;
+    border-radius: 0 0 15px 15px;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    background: linear-gradient(160deg, #092754 , #0b1833 80%, #401340 );
+	z-index: 1;
+}
+
+#logo{
+	height: 50px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li{
+    margin: 0 20px;
+}
+
+a{
+    text-decoration: none;
+    color: currentColor;   
+    transition: color .4s; 
+}
+
+a:hover{
+    color: turquoise;
+}
+
+body{
+    background-color: #161b22;
+    color: turquoise;
+}
+.container{
+    color: rgb(98, 151, 151);
+    margin: 20px auto;
+    width: 97%;
+}
+
+.content-container{
+    padding: 30px;
+    display: flex;
+}
+
+.content{
+    padding: 20px;
+    text-align: justify;
+}
+
+#side-content{
+    width: 40%;
+}
+#img-consol{
+    display: block;
+    margin: auto;
+}
+main{
+    width: 60%;
+}
+.linkRef{
+    text-decoration: underline;
+}
+
+h1{
+    text-align: center; 
+    font-weight: bold;
+    font-size: 50px;
+    margin: 10px;
+    color: turquoise;
+}
+
+footer{
+    display: flex;
+    width: 100%;
+    padding: 5px 20px;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    color: white;
+    position: relative;
+    bottom: 0;
+    background-color: #1d2531;
+}
+footer ul{
+    text-align: right;
+}
+
+footer li:first-child{
+    font-size: 20px;
+}
+
+/*ITEMS*/
+
+.items-container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	max-width: 1200px;
+	margin: auto;
+}
+
+.item{
+	min-width: 300px;
+	max-width: 300px;
+	height: 300px;
+	background-color: transparent;
+	margin: 20px;
+	border-radius: 10%;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+
+.item-img{
+	height: 100%;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transition: filter .5s;
+}
+
+.item-span{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	opacity: 0;
+	transition: opacity .5s;
+	color: turquoise;
+	font-size: 20px;
+	user-select: none;
+	pointer-events: none;
+}
+
+.item-img:hover{
+	filter: brightness(.2);
+}
+
+.item-img:hover + .item-span{
+	opacity: 1 !important;
+}
+
+/* Contacto */
+
+.form-container{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+    height: 100%;
+}
+
+.form-container h1{
+    margin-top: 25px;
+}
+
+form{
+	display: flex;
+	flex-direction: column;
+    width: 700px;
+	font-size: 18px;
+}
+
+input, textarea{
+	background-color: #161b22;
+	border: solid 2px #4a244d;
+	height: 50px;
+	border-radius: 20px;
+	padding: 0 20px;
+	max-width: 500px;
+	min-width: 500px;
+	margin-top: 5px;
+	font-size: 16px;
+    color: turquoise;
+}
+
+textarea{
+	padding: 10px;
+	height: auto;
+}
+
+form button{
+	margin-top: 20px;
+	background-color: transparent;
+	width: 150px;
+	height: 40px;
+	border: 2px solid #4a244d;
+	border-radius: 30px;
+	align-self: center;
+	cursor: pointer;
+	transition: background-color .5s;
+    color: turquoise;
+}
+
+form button:hover{
+	background-color: #4a244d;
+}
+#cont{
+    display: flex;
+    align-items: center;
+}
+
+#cont div{
+	margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+#contact-footer{
+    position: absolute;
+    bottom:0;
+}
+
+/* Grafica */
+#info-span{
+    font-size: 14px;
+    color: #aaa;
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+
+#diag{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+#grafic{
+    margin-top: 10px;
+    position: relative;
+    width:100%;
+    height: auto !important;;
+    border: 2px solid #4a244d;
+	border-radius: 30px !important;
+}
+#btns-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Calculadora */
+    #calc-container{
+    width: 400px;
+    margin-top: 40px;
+    padding: 10px;
+}
+    #calculator{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+   }
+   
+   #output-container{
+       display: flex;
+       align-items: center;
+        height: 50px;
+        width: 100%;
+        padding: 0 0 0 5px;
+        background: rgba(221, 221, 221, 0.685);
+        border: 4px solid #4a244d;
+        margin-bottom: 5px;
+        border-radius: 30px;
+   }
+
+   #output{
+       font-weight: bold;
+        color: #161b22;
+   }
+   
+   #buttons-container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 50px);
+        gap: 5px;
+     }
+   
+   .botcal{
+        height:100%;
+        width:100%;
+        background: rgba(221, 221, 221, 0.685);
+        border: 4px solid #4a244d;
+        border-radius: 30px;
+        font-size: 20px;
+   }
+
+   #zero{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        background: rgba(221, 221, 221, 0.685);
+        border: 4px solid #4a244d;
+        border-radius: 30px;
+        font-size: 20px;
+   }
+
+   #clear{
+       grid-column-start: 1;
+       grid-column-end: 5;
+       margin-top: 5px;
+       background: rgba(221, 221, 221, 0.685);
+       border: 4px solid #4a244d;
+       border-radius: 30px;
+       font-size: 20px;
+   }
+

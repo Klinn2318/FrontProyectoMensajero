@@ -1,0 +1,7 @@
+const Header = () =>{
+	return(
+		<h1>Pagina de inicio</h1>
+	)
+}
+
+export default Header;

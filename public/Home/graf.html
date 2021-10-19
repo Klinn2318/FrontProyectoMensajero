@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graficadora</title>
+    <!-- estilos -->
+    <link rel="stylesheet" href="estilos.css">
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<nav>
+    <img src="img/logo.svg" alt="Logo" style="height: 50px;">
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="items.html">Items</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+		<li><a href="cal.html">Calculadora</a></li>
+        <li><a href="graf.html">Graficadora</a></li>
+    </ul>
+</nav>
+<body>
+	<div class="form-container">
+		<h1>Graficadora</h3>
+		<form>
+			<div>
+				<span id="info-span" style="display: block;">Ingresa los datos: (Primero el "Label", despues el "Dato" separado por ":")</span>
+
+				<label>Datos:</label>
+				<input type="text" id="datos-input" placeholder="Ejemplo.  Label1:10, Label2:5" required>
+			</div>
+
+			<div id="btns-container">
+				<button id="diag-bar">Diagrama Barras</button>
+				<button id="diag-pie">Diagrama Circular</button>
+				<button id="diag-line">Diagrama Linea</button>
+			</div>
+
+			<div id="diag">
+				<label>Tu grafica:</label>
+				<canvas id="grafic"></canvas>
+			</div>
+
+			
+		</form>
+	</div>
+	<footer>
+		<span>RetroGames <br> Taller 2 y 3 Programacion</span>
+		<ul>
+			<li>Integrantes:</li>
+			<li>Gabriel Reyes</li>
+		</ul>
+	</footer>
+</body>
+<script src="js/graf.js"></script>
+</html>
